@@ -2,19 +2,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&display=swap');
 
-body {
-    font-family: 'Inter', sans-serif;
-    margin: 20px;
-    padding: 20px;
-    background-color: #f8f9fa;
+:root {
+    --primary-font: "inter", sans-serif;
+    --secondary-font: "Macondo", cursive;
+    --primary-color: #416a8e  /* blue shade */;
+    --highlight-color: grey /* grey shade */;
 }
 
-h1 {
-    font-family: "Macondo", cursive;
+
+body {
+    font-family: var(--primary-font)
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+
+.sub-heading-color {
+    color: var(--highlight-color);
+}
+
+.section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Navbar customization */
+#navbar {   
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    background-color: var(--primary-color)
+}
+
+/* Header */
+
+#header .lead {
+    font-family: var(--secondary-font)
 }
 
 /* Grid visualization for development */
-.container,
+/* .container,
 .row {
     border: 2px solid black;
 }
