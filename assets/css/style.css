@@ -130,6 +130,9 @@ h2 {
     color: var(--secondary-color);
 }
 
+#contact .table-dark * {
+    background-color: transparent;
+}
 
 /* Grid visualization for development */
 /* .container,
