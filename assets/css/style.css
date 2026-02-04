@@ -126,6 +126,16 @@ h2 {
     background-color: transparent;
 }
 
+/* Discount badge */
+.discount-badge {
+    background-color: var(--highlight-color);
+    padding: 6px 24px;
+    color: white;
+    margin: 20px auto;
+    display: inline-block;
+    font-weight: bold;
+}
+
 
 
 /* Media queries */
