@@ -42,6 +42,31 @@ h2 {
     margin-bottom: 2rem;
 }
 
+/* Buttons */
+.custom-button-filled {
+    border: 2px solid var(--highlight-color);
+    background-color: var(--highlight-color);
+    color: white;
+}
+
+.custom-button-filled:hover {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.custom-button-outlined {
+    border: 2px solid var(--highlight-color);
+    background-color: transparent;
+    color: var(--highlight-color);
+}
+
+.custom-button-outlined:hover {
+    border: 2px solid var(--highlight-color);
+    background-color: var(--highlight-color);
+    color: white;
+}
+
 /* Navbar customization */
 #navbar {   
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -64,39 +89,6 @@ h2 {
 
 #services .card  {
     margin-bottom: 1.5rem;
-}
-
-
-
-/* Media queries */
-/* Medium devices (tablets, 768px and up) */
-@media screen and (min-width: 768px) {
-    /* Makes all cards in services section have the same height on different resolutions*/
-    #services .card-body {
-        min-height: 191px;
-    }
-}
-
-/* Medium devices (Small laptops, 992px and up) */
-@media screen and (min-width: 992px) {
-    /* Makes all cards in services section have the same height on different resolutions*/
-    #services .card-body {
-        min-height: auto;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    /* Makes all cards in services section have the same height on different resolutions*/
-    #services .card-body {
-        min-height: 220px;
-    }
-}
-
-@media screen and (min-width: 1400px) {
-    /* Makes all cards in services section have the same height on different resolutions*/
-    #services .card-body {
-        min-height: 195px;
-    }
 }
 
 /* Footer / Contact */
@@ -133,6 +125,41 @@ h2 {
 #contact .table-dark * {
     background-color: transparent;
 }
+
+
+
+/* Media queries */
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    /* Makes all cards in services section have the same height on different resolutions*/
+    #services .card-body {
+        min-height: 191px;
+    }
+}
+
+/* Medium devices (Small laptops, 992px and up) */
+@media screen and (min-width: 992px) {
+    /* Makes all cards in services section have the same height on different resolutions*/
+    #services .card-body {
+        min-height: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* Makes all cards in services section have the same height on different resolutions*/
+    #services .card-body {
+        min-height: 220px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    /* Makes all cards in services section have the same height on different resolutions*/
+    #services .card-body {
+        min-height: 195px;
+    }
+}
+
+
 
 /* Grid visualization for development */
 /* .container,
