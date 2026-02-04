@@ -127,6 +127,11 @@ h2 {
 }
 
 /* Discount badge */
+
+#events-dbadge {
+    text-align: center;
+    margin-top: 1px;
+}
 .discount-badge {
     background-color: var(--highlight-color);
     padding: 6px 24px;
