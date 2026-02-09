@@ -25,7 +25,7 @@
 
 <body class="d-flex flex-column min-vh-100">
   <!-- Navigation -->
-  <nav id="navbar" class="navbar navbar-expand-lg" data-bs-theme="dark">
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
     <div class="container">
       <a class="navbar-brand" href="index.html"><img src="assets/images/logo-sm-white.png"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -197,65 +197,61 @@
       </div>
     </section>
 
-    <section id="events">
-      <div class="container section">
-        <h2 class="display-6 text-center mb-4">Join our events!</h2>
-        <div class="row">
-          <div class="col-12 col-lg-6">
-            <p>Whether you're delving into Dungeons, reliving classic games, or competing in high-stakes tournaments, we
-              have something for every gamer.
-              Reservations are recommended to ensure your spot at the table.
-              Student discounts are available so bring your student ID and enjoy more gaming for less.
-            </p>
-            <p>
-              Outside scheduled events our shop remains open for regular play.
-              Join us anytime to discover new games and meet fellow enthusiasts.
-            </p>
-          </div>
-          <div class="col-12 col-lg-6 px-4">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">Events</th>
-                  <th scope="col">Date</th>
-                  <th scope="col">Time</th>
-                  <th scope="col">Price</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Dungeons & Dragons</th>
-                  <td>Tuesdays</td>
-                  <td>8pm - 11pm</td>
-                  <td>£25 for 6 sessions</td>
-                </tr>
-                <tr>
-                  <th scope="row">Retro Game Night</th>
-                  <td>Thursdays</td>
-                  <td>8pm - 11pm</td>
-                  <td>@£5 per person</td>
-                </tr>
-                <tr>
-                  <th scope="row">Tournaments</th>
-                  <td>Last Sunday of the month</td>
-                  <td>12pm - 7pm</td>
-                  <td>£10 per person</td>
-                </tr>
-              </tbody>
-            </table>
-            <div id="events-dbadge">
-              <div class="discount-badge-parent col-12">
-                <div class="discount-badge text-center">
-                  *Get 20% off with valid student ID
-                </div>
-              </div>
+    <!-- Events -->
+<section id="events" class="container section">
+    <h2 class="display-6 text-center mb-4">JOIN OUR EVENTS!</h2>
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <p>Whether you're delving into Dungeons, reliving classic games, or competing in high-stakes tournaments, we have something for every gamer. Reservations are recommended to ensure your spot at the table. Student discounts are available so bring your student ID and enjoy more gaming for less.</p>
+            <p>Outside scheduled events our shop remains open for regular play. Join us anytime to discover new games and meet fellow enthusiasts.</p>
+        </div>
+
+        <div class="col-12 col-lg-6 px-0 px-lg-4">
+            <div class="table-responsive" style="border: none;">
+                <table class="table align-middle" style="font-size: 0.8rem; width: 100%; table-layout: auto;">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 28%; padding-left: 5px;">Event</th>
+                            <th scope="col" style="width: 25%;">Date</th>
+                            <th scope="col" style="width: 22%;">Time</th>
+                            <th scope="col" style="width: 25%; padding-right: 5px;">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" style="font-weight: 700; padding-left: 5px;">Dungeons & Dragons</th>
+                            <td>Tuesdays</td>
+                            <td>8pm - 11pm</td>
+                            <td>£25 for 6 sessions</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="font-weight: 700; padding-left: 5px;">Retro Game Night</th>
+                            <td>Thursdays</td>
+                            <td>8pm - 11pm</td>
+                            <td>£5 per person*</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="font-weight: 700; padding-left: 5px;">Tournaments</th>
+                            <td>Last Sunday of the month</td>
+                            <td>12pm - 7pm</td>
+                            <td>£10 per person</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-          </div>
+
+<div id="events-dbadge" class="mt-1">
+    <div class="discount-badge">
+        *Get 20% off with valid student ID
+    </div>
+</div>
         </div>
-        <div class="text-center col-12">
-          <a href="booking.html" class="btn custom-button-outlined mb-4">Book now</a>
-        </div>
-    </section>
+    </div>
+
+    <div class="text-center col-12 mt-4">
+        <a href="booking.html" class="btn custom-button-outlined px-5">Book now</a>
+    </div>
+</section>
   </main>
 
   <!-- Footer / Contact Section -->

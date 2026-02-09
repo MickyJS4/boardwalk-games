@@ -13,7 +13,8 @@
 
 
 body {
-    font-family: var(--primary-font)
+    font-family: var(--primary-font); 
+    padding-top: 57.15px; /* Pushes the top of the header down under fixed navbar*/
 }
 
 h1,
@@ -132,13 +133,21 @@ h2 {
     text-align: center;
     margin-top: 1px;
 }
+
 .discount-badge {
     background-color: var(--highlight-color);
-    padding: 6px 24px;
     color: white;
-    margin: 20px auto;
-    display: inline-block;
     font-weight: bold;
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 10px;
+    
+    /* This makes it fill the screen on mobile, 
+       but stop growing at a reasonable width on tablets/monitors */
+    display: block;
+    width: 100%;
+    max-width: 450px; 
+    margin: 20px auto; /* Centers the badge horizontally */
 }
 
 
