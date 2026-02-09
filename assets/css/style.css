@@ -39,9 +39,10 @@ h2 {
 }
 
 .section {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    padding: 4rem; /* Prevent navbar overlap */
+    padding-top: 100px;
 }
+
 
 /* Buttons */
 .custom-button-filled {
@@ -82,6 +83,10 @@ h2 {
 
 
 /* Services Section */
+#services {
+    padding-top: 100px; /* Remove extra padding from section class */
+}
+
 #services .card-footer {
     font-weight: bold;
     color: var(--highlight-color);
